@@ -1,8 +1,22 @@
 import React from "react";
 import { WINDOW_WIDTH } from "../constants";
+import {
+  BtnWrapper,
+  CheckBoxBtnWrapper,
+  ForgotPasswordWrapper,
+  InputStyle,
+  ResetLinkStyle,
+} from "../styles";
 import Button from "./button.component";
 
-const Form = () => {
+interface FormProps {
+  value: string | number;
+  onChangeText?: any;
+  checkboxText?: string;
+  submit?: any;
+}
+const Form = (props: FormProps) => {
+  const { value, onChangeText, checkboxText, submit } = props;
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <span
@@ -12,65 +26,24 @@ const Form = () => {
       </span>
       <input
         type="email"
-        style={{
-          width: WINDOW_WIDTH > 720 ? "300px" : "90%",
-          height: "30px",
-          borderWidth: "1px",
-          borderRadius: "30px",
-          borderColor: "#6877CA",
-          padding: "10px",
-          fontSize: "20px",
-        }}
+        onChange={onChangeText}
+        value={value}
+        style={InputStyle}
       />
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div style={ForgotPasswordWrapper}>
         <span style={{ fontSize: "14px", marginBottom: "10px" }}>
           Forgot Password
         </span>
-        <span
-          style={{
-            fontSize: "14px",
-            marginBottom: "10px",
-            marginLeft: "5px",
-            color: "#6877CA",
-            fontWeight: "bold",
-          }}
-        >
-          Reset
-        </span>
+        <span style={ResetLinkStyle}>Reset</span>
       </div>
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          alignItems: "center",
-          justifyContent: "space-between",
-          display: "flex",
-          flexDirection: "row",
-          marginTop: "20px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div style={CheckBoxBtnWrapper}>
+        <div style={BtnWrapper}>
           <input type="checkbox" />
           <span style={{ fontSize: "14px", color: "#333333" }}>
-            Stay signed in
+            {checkboxText}
           </span>
         </div>
-        <Button />
+        <Button title="Sign In" onBtnClick={submit} />
       </div>
     </div>
   );

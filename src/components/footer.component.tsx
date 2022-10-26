@@ -1,5 +1,4 @@
 import React from "react";
-import { WINDOW_WIDTH } from "../constants";
 
 const Footer = () => {
   return (

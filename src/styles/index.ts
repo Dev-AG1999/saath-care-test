@@ -31,3 +31,61 @@ export const ProfileStyle = {
   alignItems: "center",
   justifyContent: "space-between",
 };
+
+export const ButtonStyle = {
+  backgroundColor: "#6877CA",
+  color: "#fff",
+  fontSize: "15px",
+  width: "150px",
+  padding: "20px",
+  display: "inline-block",
+  textAlign: "center" as "center",
+  margin: "4px 2px",
+  fontWeight: "bold",
+  borderWidth: "1px",
+  borderColor: "#6877CA",
+  borderRadius: "50px",
+};
+
+export const InputStyle = {
+  width: WINDOW_WIDTH > 720 ? "300px" : "90%",
+  height: "30px",
+  borderWidth: "1px",
+  borderRadius: "30px",
+  borderColor: "#6877CA",
+  padding: "10px",
+  fontSize: "20px",
+};
+
+export const ForgotPasswordWrapper = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "row" as 'row',
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+export const ResetLinkStyle = {
+  fontSize: "14px",
+  marginBottom: "10px",
+  marginLeft: "5px",
+  color: "#6877CA",
+  fontWeight: "bold",
+};
+
+export const CheckBoxBtnWrapper = {
+  width: "100%",
+  height: "100%",
+  alignItems: "center",
+  justifyContent: "space-between",
+  display: "flex",
+  flexDirection: "row" as "row",
+  marginTop: "20px",
+};
+
+export const BtnWrapper = {
+  display: "flex",
+  flexDirection: "row" as "row",
+  justifyContent: "center",
+  alignItems: "center",
+};
