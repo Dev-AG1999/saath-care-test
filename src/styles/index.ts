@@ -65,7 +65,6 @@ export const BackButtonStyle = {
 };
 
 export const InputStyle = {
-  width: WINDOW_WIDTH > 720 ? "300px" : "90%",
   height: "30px",
   borderWidth: "1px",
   borderRadius: "30px",
