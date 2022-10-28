@@ -8,13 +8,15 @@
 }
 .card{
     height: 70%;
+    width: 500px;
 }
 @media screen and (max-width:480px) {
     .BtnWrapper{
         flex-direction:column;
     }
     .card{
-        height: 100%;
+        height: auto ;
+        width:90%;
 
     }
     

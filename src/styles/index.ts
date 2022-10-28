@@ -14,7 +14,6 @@ export const MainLayoutStyle = {
 };
 
 export const CardStyle = {
-  width:  WINDOW_WIDTH > 720 ? "500px" : "300px",
   backgroundColor: "#FFFFFF",
   borderWidth: "5px",
   borderRadius: "20px",
