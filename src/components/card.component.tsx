@@ -4,6 +4,7 @@ import Footer from "./footer.component";
 import Form from "./form.component";
 import Profile from "./profile.component";
 import avatar from "../../src/assets/avatar.svg";
+import './mediaquery.css';
 
 const Card = () => {
   const [value, setvalue] = useState("");
@@ -16,7 +17,7 @@ const Card = () => {
     }
   };
   return (
-    <div style={CardStyle}>
+    <div className="card" style={CardStyle}>
       <div
         style={{ display: "flex", justifyContent: "flex-start", width: "100%" }}
       >
