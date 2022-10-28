@@ -23,7 +23,7 @@ export const CardStyle = {
   margin: "4em",
   display: "flex",
   alignItems: "center",
-  justifyContent: "space-evenly",
+  justifyContent: "space-between",
   flexDirection: "column" as "column",
   paddingTop:"50px",
 };

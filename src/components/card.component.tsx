@@ -24,11 +24,11 @@ const Card = () => {
         <button style={BackButtonStyle}>◀ Back</button>
       </div>
 
-      <Profile
+    <div>  <Profile
         avatar={avatar}
         heading="Andrew@polka.io"
         subheading="Personal Account"
-      />
+      /></div>
       <Form
         value={value}
         checkboxText="Stay signed in"

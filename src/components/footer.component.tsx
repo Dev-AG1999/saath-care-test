@@ -13,6 +13,7 @@ const Footer = () => {
           justifyContent: "center",
           width: "100%",
           textAlign: "center",
+          padding:"10px"
         }}
       >
         <p
@@ -20,10 +21,10 @@ const Footer = () => {
             fontSize: "12px",
             color: "#999999",
             textOverflow: "hidden",
-            paddingLeft: "10px",
-            paddingRight: "10px",
+      //  padding:"0 10px",
             maxWidth: "300px",
             textAlign: "center",
+            margin:"0"
           }}
         >
           This site is protected by reCAPTCHA and the Google{" "}
