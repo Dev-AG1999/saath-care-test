@@ -21,7 +21,6 @@ const Footer = () => {
             fontSize: "12px",
             color: "#999999",
             textOverflow: "hidden",
-      //  padding:"0 10px",
             maxWidth: "300px",
             textAlign: "center",
             margin:"0"
