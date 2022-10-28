@@ -8,7 +8,7 @@
 }
 @media screen and (max-width:560px) {
     .BtnWrapper{
-        flex-direction:column ;
+        flex-direction:column;
        
     }
     
