@@ -18,7 +18,7 @@ interface FormProps {
 const Form = (props: FormProps) => {
   const { value, onChangeText, checkboxText, submit } = props;
   return (
-    <div style={{ display: "flex", flexDirection: "column",padding:"10px" }}>
+    <div style={{ display: "flex", flexDirection: "column",padding:"20px" }}>
       <span
         style={{ fontSize: "14px", marginBottom: "10px", marginLeft: "25px" }}
       >

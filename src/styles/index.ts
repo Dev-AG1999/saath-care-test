@@ -1,5 +1,6 @@
 import { WINDOW_WIDTH } from "../constants";
 
+
 export const MainLayoutStyle = {
   width: "100%",
   height: "100vh",
@@ -8,10 +9,12 @@ export const MainLayoutStyle = {
   alignItems: "center",
   justifyContent: "center",
   display: "flex",
+
+  
 };
 
 export const CardStyle = {
-  width: WINDOW_WIDTH > 720 ? "500px" : "300px",
+  width:  WINDOW_WIDTH > 720 ? "500px" : "300px",
   height: WINDOW_WIDTH > 720 ? "70%" : "90%",
   backgroundColor: "#FFFFFF",
   borderWidth: "5px",
