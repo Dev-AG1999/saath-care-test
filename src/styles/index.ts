@@ -22,6 +22,7 @@ export const CardStyle = {
   alignItems: "center",
   justifyContent: "space-evenly",
   flexDirection: "column" as "column",
+  paddingTop:"50px",
 };
 
 export const ProfileStyle = {
@@ -37,7 +38,7 @@ export const ButtonStyle = {
   color: "#fff",
   fontSize: "15px",
   width: "150px",
-  padding: "20px",
+  padding: "15px 20px",
   display: "inline-block",
   textAlign: "center" as "center",
   margin: "4px 2px",
@@ -45,6 +46,21 @@ export const ButtonStyle = {
   borderWidth: "1px",
   borderColor: "#6877CA",
   borderRadius: "50px",
+  cursor:"pointer"
+};
+
+export const BackButtonStyle = {
+  fontSize: "15px",
+  display: "flex",
+  width:"100%", 
+  fontWeight: "bold",
+  border:"none",
+  background:"transparent",
+  margin:"0 10px",
+  color:"#9b9999",
+  marginTop:"-20px",
+  cursor:"pointer"
+ 
 };
 
 export const InputStyle = {
@@ -83,9 +99,3 @@ export const CheckBoxBtnWrapper = {
   marginTop: "20px",
 };
 
-export const BtnWrapper = {
-  display: "flex",
-  flexDirection: "row" as "row",
-  justifyContent: "center",
-  alignItems: "center",
-};

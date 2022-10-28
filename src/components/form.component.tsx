@@ -1,7 +1,8 @@
 import React from "react";
 import { WINDOW_WIDTH } from "../constants";
+import './mediaquery.css';
 import {
-  BtnWrapper,
+  
   CheckBoxBtnWrapper,
   ForgotPasswordWrapper,
   InputStyle,
@@ -18,7 +19,7 @@ interface FormProps {
 const Form = (props: FormProps) => {
   const { value, onChangeText, checkboxText, submit } = props;
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column",padding:"10px" }}>
       <span
         style={{ fontSize: "14px", marginBottom: "10px", marginLeft: "25px" }}
       >
@@ -37,13 +38,13 @@ const Form = (props: FormProps) => {
         <span style={ResetLinkStyle}>Reset</span>
       </div>
       <div style={CheckBoxBtnWrapper}>
-        <div style={BtnWrapper}>
-          <input type="checkbox" />
+        <div className="BtnWrapper">
+          <div className="checkBox" style={{display:"flex"}}> <input type="checkbox" />
           <span style={{ fontSize: "14px", color: "#333333" }}>
             {checkboxText}
-          </span>
-        </div>
+          </span></div>
         <Button title="Sign In" onBtnClick={submit} />
+        </div>
       </div>
     </div>
   );
